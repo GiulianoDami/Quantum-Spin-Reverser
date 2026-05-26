@@ -1,0 +1,37 @@
+{
+    "language": "TypeScript",
+    "dependency_file": "package.json",
+    "dependencies": [],
+    "files": [
+        {
+            "path": "src/CrystalStructure.ts",
+            "description": "Represents and analyzes crystal structures with symmetry properties",
+            "exports": ["class CrystalStructure", "interface CrystalParameters"]
+        },
+        {
+            "path": "src/MomentumTransfer.ts",
+            "description": "Models momentum transfer events in quantum systems",
+            "exports": ["class MomentumTransfer", "interface MomentumParameters"]
+        },
+        {
+            "path": "src/SpinAnalyzer.ts",
+            "description": "Analyzes spin reversal probabilities and simulates quantum dynamics",
+            "exports": ["class SpinAnalyzer", "interface SpinAnalysisResult"]
+        },
+        {
+            "path": "src/SymmetryAnalyzer.ts",
+            "description": "Provides symmetry analysis for crystal structures",
+            "exports": ["class SymmetryAnalyzer", "interface SymmetryProperties"]
+        },
+        {
+            "path": "src/index.ts",
+            "description": "Main entry point exporting all public APIs",
+            "imports_from_other_files": ["CrystalStructure.ts", "MomentumTransfer.ts", "SpinAnalyzer.ts"]
+        },
+        {
+            "path": "src/types.ts",
+            "description": "Shared type definitions used across the library",
+            "exports": ["type Vector3D", "type SpinState", "type Probability"]
+        }
+    ]
+}
